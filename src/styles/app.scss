@@ -1,9 +1,14 @@
+@import 'partials/navbar';
+
 .card {
     background-color: gray;
     margin-top: 10px;
+
+    a {
+        color: black;
+        text-decoration: underline;
+    }
 }
 
-a {
-    color: black;
-    text-decoration: underline;
-}
+
+

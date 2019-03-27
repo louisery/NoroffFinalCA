@@ -1,0 +1,12 @@
+.navbar {
+    &__links {
+        margin-right: 10px;
+    }
+    &__links--color a {
+        color: lightgreen !important;
+    }
+
+    &__links--color a:hover {
+        color: lightblue !important;
+    }
+}

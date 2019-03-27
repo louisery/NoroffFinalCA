@@ -16,6 +16,7 @@ export default class Search extends React.Component {
         const app = this;
 
         return (
+            <div className="[ row ]">
             <div className="[ col-sm-12 ] [ search ]">
                 <input type="text"
                     ref="searchTerm"
@@ -24,6 +25,7 @@ export default class Search extends React.Component {
                     placeholder="Search for a Character"
                 />
                 <br />
+            </div>
             </div>
         );
     }
