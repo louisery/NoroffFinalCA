@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 
 import App from './components/app/app';
+import Login from './pages/login';
 import Homepage from './pages/homepage';
 import CardSpecific from './pages/cardSpecific';
 import About from './components/aboutComponent';
@@ -19,7 +20,8 @@ const routes = (
     <HashRouter>
         <Switch>
             <App>
-                <Route path="/" exact component={Homepage} />
+                <Route path="/" exact component={Login} />
+                <Route path="/home" exact component={Homepage} />
                 <Route path="/cardspecific/:id" component={CardSpecific} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/contact" component={Contact} />

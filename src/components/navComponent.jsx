@@ -15,7 +15,7 @@ export default class NavbarComponent extends React.Component {
                 <div className="[ collapse navbar-collapse ]" id="navbar-content">
                     <ul className="[ navbar-nav ml-auto ]">
                         <li className="[ nav-item ] [ navbar__links navbar__links--color ]">
-                            <NavLink to="/">Home</NavLink>
+                            <NavLink to="/home">Home</NavLink>
                         </li>
                         <li className="[ nav-item ] [ navbar__links navbar__links--color ]">
                             <NavLink to="/about">About</NavLink>

@@ -1,9 +1,14 @@
+// imports
 @import 'partials/navbar';
 @import 'partials/search';
 @import 'partials/card';
 @import 'partials/about';
 @import 'partials/contact';
+@import 'partials/login';
 
 
-
-
+// 
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}

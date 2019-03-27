@@ -3,8 +3,8 @@ import React from 'react';
 export default class CardSpecificComponent extends React.Component {
     render() {
         return (
-            <div className="[ card ]">
             <div className="[ row ]">
+            <div className="[ card ]">
                 <div className="[ col-sm-4 ]">
                     <img src={this.props.imageUrl} className="[ card__img ]" alt="character" />
                 </div>
