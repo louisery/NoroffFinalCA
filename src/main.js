@@ -11,6 +11,8 @@ import {
 import App from './components/app/app';
 import Homepage from './pages/homepage';
 import CardSpecific from './pages/cardSpecific';
+import About from './components/aboutComponent';
+
 
 const routes = (
     <HashRouter>
@@ -18,6 +20,7 @@ const routes = (
             <App>
                 <Route path="/" exact component={Homepage} />
                 <Route path="/cardspecific/:id" component={CardSpecific} />
+                <Route exact path="/about" component={About} />
             </App>
         </Switch>
     </HashRouter>
