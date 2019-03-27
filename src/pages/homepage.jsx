@@ -70,7 +70,10 @@ export default class Homepage extends React.Component {
             <Search onSearchTerm={app.handleSearchTerm}></Search>
             </div>
             <div className="[ col-sm-12 ]">
+            <h1 className="[ text-center ]">Characters</h1>
+            <div className="[ row ] [ text-center ]">
             {app.state.characterCards}
+            </div>
             </div>
             </div>
         )
