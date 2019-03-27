@@ -16,17 +16,17 @@ export default class Search extends React.Component {
         const app = this;
 
         return (
-            <div className="[ row ]">
-            <div className="[ col-sm-12 ] [ search ]">
+            <div className="[ mb-4 ]">
                 <input type="text"
-                    ref="searchTerm"
-                    onChange={app.handleCharacterSearchTerm}
-                    class="form-control"
+                    class="[ form-control ]"
                     placeholder="Search for a Character"
-                />
-                <br />
-            </div>
-            </div>
-        );
-    }
-}
+                    aria-label="Search"
+                    ref="searchTerm"
+                    onChange={app.handleCharacterSearchTerm} />
+</div>
+                );
+            }
+        }
+        
+        
+        

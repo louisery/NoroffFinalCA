@@ -66,10 +66,10 @@ export default class Homepage extends React.Component {
         app.createCards();
         return (
             <div className="[ row ]">
-            <div className="[ col-sm- 12 ]">
+            <div className="[ col-sm-8 ] [ search ]">
             <Search onSearchTerm={app.handleSearchTerm}></Search>
             </div>
-            <div className="[ col-sm- 12 ]">
+            <div className="[ col-sm-12 ]">
             {app.state.characterCards}
             </div>
             </div>
