@@ -7,7 +7,7 @@ export default class CardSpecific extends React.Component {
         super(props);
         this.state = {
             characterObj: [],
-            characterID: this.props.match.params.id
+            characterId: this.props.match.params.id
         }
     }
 
@@ -18,13 +18,13 @@ export default class CardSpecific extends React.Component {
 
     getData() {
         const app = this;
-        fetch('https://api.magicthegathering.io/v1/cards?page=100' + app.state.characterID)
+        fetch('https://api.magicthegathering.io/v1/cards?page=100' + app.state.characterId)
             .then(response => {
                 return response.json()
             })
             .then(result => {
                 app.setState({
-                    characterObj: result.card
+                    characterObj: result
                 })
             });
     }
@@ -33,7 +33,7 @@ export default class CardSpecific extends React.Component {
         const app = this;
 
         let specificCard = <CardSpecificComponent
-            imageURL={app.state.characterObj.imageURL}
+            imageURL={app.state.characterObj.imageUrl}
             name={app.state.characterObj.name}
             rarity={app.state.characterObj.rarity}
             colors={app.state.characterObj.colors}
