@@ -11,7 +11,7 @@ import {
 import App from './components/app/app';
 import Login from './pages/login';
 import Homepage from './pages/homepage';
-import CardSpecific from './pages/cardSpecific';
+import CardSpecific from './pages/character-specific';
 import About from './components/aboutComponent';
 import Contact from './components/contactComponent';
 
@@ -22,7 +22,7 @@ const routes = (
             <App>
                 <Route path="/" exact component={Login} />
                 <Route path="/home" exact component={Homepage} />
-                <Route path="/cardspecific/:id" component={CardSpecific} />
+                <Route path="/character-specific/:id" component={CardSpecific} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/contact" component={Contact} />
             </App>

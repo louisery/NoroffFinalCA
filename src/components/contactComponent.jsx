@@ -8,7 +8,7 @@ export default class ContactComponent extends React.Component {
                     <form className="[ form ]">
                         <h2>Contact Form</h2>
                         <div className="[ form-group ]">
-                            <label for="inputName">First Name:</label>
+                            <label for="inputFirstName">First Name:</label>
                             <input type="text" className="[ form-control ]" id="firstName" placeholder="Enter First Name"></input>
                         </div>
                         <div className="[ form-group ]">

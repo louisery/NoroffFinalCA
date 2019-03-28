@@ -5,9 +5,9 @@ export default class CardComponent extends React.Component {
         return (
             <div className="[ col-sm-4 ]">
                 <div className="[ card ]">
-                    <a href={'#/cardspecific' + this.props.id}>
-                        <h2 className="[ card__heading ]">{this.props.name}</h2>
-                        <img src={this.props.imageUrl} className="[ img-fluid ] [ card__img ]" alt="character" />
+                <h2 className="[ card__heading ]">{this.props.name}</h2>
+                    <a href={'#/character-specific/'+this.props.id} >
+                            <img src={this.props.image} className="[ img-fluid ] [ card__img ]" alt="character card" />
                     </a>
                 </div>
             </div>
