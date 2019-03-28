@@ -1,9 +1,17 @@
 .login {
-    border: 1px solid black;
-    padding: 20px;
+    background: $gradient;
     margin-top: 30px;
+    padding: 20px;
+    border-radius: 15px;
 
-    &__error {
-        color: red;
+    &__button {
+        background-color: $green;
+        border-color: $green;
+        color: $black;
+    }
+
+    &__button:hover {
+        background-color: darken($green, $amount: 10);
+        border-color: darken($green, $amount: 10);
     }
 }

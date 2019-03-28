@@ -93,10 +93,10 @@ export default class ContactComponent extends React.Component {
         return (
             <div className="[ row ]">
                 <div className="[ col-sm-6 ] [ col-centered ]">
-                    <h1>Contact Form</h1>
+                    <h1>Contact Us</h1>
                     <form className="[ form ]" onSubmit={this.handleSubmit} noValidate>
                         <div className="[ form-group ]">
-                            <label htmlFor="inputFirstName">First Name</label>
+                            <label htmlFor="inputFirstName">First Name:</label>
                             <input
                                 type="text"
                                 name="inputFirstName"
@@ -106,11 +106,11 @@ export default class ContactComponent extends React.Component {
                                 onChange={this.handleChange}
                             />
                             {formErrors.inputFirstName.length > 0 && (
-                                <span className="[ form__error ]">{formErrors.inputFirstName}</span>
+                                <span className="[ form__error ]"><i>{formErrors.inputFirstName}</i></span>
                             )}
                         </div>
                         <div className="[ form-group ]">
-                            <label htmlFor="inputLastName">Last Name</label>
+                            <label htmlFor="inputLastName">Last Name:</label>
                             <input
                                 type="text"
                                 name="inputLastName"
@@ -120,11 +120,11 @@ export default class ContactComponent extends React.Component {
                                 onChange={this.handleChange}
                             />
                             {formErrors.inputLastName.length > 0 && (
-                                <span className="[ form__error ]">{formErrors.inputLastName}</span>
+                                <span className="[ form__error ]"><i>{formErrors.inputLastName}</i></span>
                             )}
                         </div>
                         <div className="[ form-group ]">
-                            <label htmlFor="inputPhone">Phone</label>
+                            <label htmlFor="inputPhone">Phone:</label>
                             <input
                                 type="phone"
                                 name="inputPhone"
@@ -134,11 +134,11 @@ export default class ContactComponent extends React.Component {
                                 onChange={this.handleChange}
                             />
                             {formErrors.inputPhone.length > 0 && (
-                                <span className="[ form__error ]">{formErrors.inputPhone}</span>
+                                <span className="[ form__error ]"><i>{formErrors.inputPhone}</i></span>
                             )}
                         </div>
                         <div className="[ form-group ]">
-                            <label htmlFor="inputEmail">Email</label>
+                            <label htmlFor="inputEmail">Email:</label>
                             <input
                                 type="email"
                                 name="inputEmail"
@@ -148,10 +148,12 @@ export default class ContactComponent extends React.Component {
                                 onChange={this.handleChange}
                             />
                             {formErrors.inputEmail.length > 0 && (
-                                <span className="[ form__error ]">{formErrors.inputEmail}</span>
+                                <span className="[ form__error ]"><i>{formErrors.inputEmail}</i></span>
                             )}
                         </div>
-                        <button type="submit" class="[ btn btn-primary ]">Submit <i class="far fa-paper-plane"></i></button>
+                        <div className="[ text-center ]">
+                            <button type="submit" class="[ btn ] [ form__button ]">Submit <i class="far fa-paper-plane"></i></button>
+                        </div>
                     </form>
                 </div>
             </div>

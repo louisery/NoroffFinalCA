@@ -32,7 +32,7 @@ export default class CardSpecific extends React.Component {
 
     render() {
         const app = this;
-        let specificCharacter = <CardSpecificComponent image={app.state.characterObj.image}
+        let specificCharacter = <CardSpecificComponent image={app.state.characterObj.imageUrl}
         name={app.state.characterObj.name}
         rarity={app.state.characterObj.rarity}
         colors={app.state.characterObj.colors}
@@ -41,7 +41,12 @@ export default class CardSpecific extends React.Component {
         return (
                 <div className="[ row ]">
                     <div className="[ col-sm-12 ]">
+                    <h1>Name of Character</h1>
+                    <div className="[ character ]">
+                    <div className="[ character__info ]">
                         {specificCharacter}
+                        </div>
+                        </div>
                     </div>
                 </div>
         );

@@ -8,6 +8,7 @@ import {
     HashRouter
 } from 'react-router-dom';
 
+import './styles/app.scss';
 import App from './components/app/app';
 import Login from './pages/login';
 import Homepage from './pages/homepage';

@@ -1,13 +1,27 @@
 // imports
-@import 'partials/navbar';
-@import 'partials/search';
-@import 'partials/card';
-@import 'partials/about';
-@import 'partials/contact';
-@import 'partials/login';
+@import "partials/variables";
+@import "partials/navbar";
+@import "partials/search";
+@import "partials/card";
+@import "partials/about";
+@import "partials/contact";
+@import "partials/login";
+@import "partials/character-specific";
 
+// global styles
+body {
+    background: $black;
+    font-family: $body-font;
+}
 
-// 
+h1 {
+    color: $yellow;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: $heading-font;
+}
+
 .col-centered {
     float: none;
     margin: 0 auto;

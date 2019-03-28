@@ -2,20 +2,36 @@
     &__heading {
         margin-top: 30px;
     }
+
+    p {
+        color: white;
+    }
 }
 
 .box {
+    background: $gradient;
+    margin-bottom: 300px;
+    border-radius: 5px;
+
     &__heading {
         margin-top: 30px;
-        background-color: gray;
-        padding: 2px;
+        background: $gradient;
+        border-radius: 5px;
+        padding: 2px 30px;
+
+        h2 {
+            color: $black;
+            font-family: $heading-font;
+        }
     }
 
     &__text {
         margin-top: 10px;
+        padding: 2px 30px;
     }
 
     .fas {
         padding: 10px;
+        color: $black;
     }
 }

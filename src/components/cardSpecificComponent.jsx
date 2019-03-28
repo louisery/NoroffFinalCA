@@ -6,7 +6,7 @@ export default class CardSpecificComponent extends React.Component {
             <div className="[ row ]">
             <div className="[ cards ]">
                 <div className="[ col-sm-12 ]">
-                    <img src={this.props.imageUrl} className="[ img-fluid ] [ card__img ]" alt="character" />
+                    <img src={this.props.imageUrl} className="[ img-fluid ] [ card__img ]" alt="{this.props.name}" />
                 </div>
                 <div className="[ col-sm-12 ]">
                     <h1 className="[ card__heading ]">{this.props.name}</h1>

@@ -1,7 +1,21 @@
 .form {
-    margin-top: 30px;
+    background: $gradient;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 100px;
 
-    &__error {
-        color: red;
+    // &__error {
+    //     font-family: cursive;
+    // }
+
+    &__button {
+        background-color: $green;
+        border-color: $green;
+        color: $black;
+    }
+
+    &__button:hover {
+        background-color: darken($green, $amount: 10);
+        border-color: darken($green, $amount: 10);
     }
 }

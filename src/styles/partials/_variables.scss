@@ -1,0 +1,17 @@
+$gradient: linear-gradient(135deg, #edb716 0%, #dc223b 100%);
+$yellow: #ffcc34;
+$red: #dc223b;
+$black: #181616;
+$green: #00EB31;
+$orange: #ed8516;
+
+
+// Import Google Fonts
+$font: "https://fonts.googleapis.com/css?family=Open+Sans|ZCOOL+QingKe+HuangYou";
+
+@if global_variable_exists(font) {
+    @import url($font);
+}
+
+$heading-font: 'ZCOOL QingKe HuangYou', cursive;
+$body-font: 'Open Sans', sans-serif;

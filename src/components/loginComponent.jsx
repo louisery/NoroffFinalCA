@@ -20,21 +20,23 @@ export default class LoginComponent extends React.Component {
 
         return (
             <div className="[ row ]">
-                <div className="[ col-sm-6 ] [ col-centered ]">
+                <div className="[ col-sm-4 ] [ col-centered ]">
+                    <h1>Login</h1>
                     <div className="[ login ]">
-                        <h1>Login</h1>
                         <form className="[ login__form ]" ref="loginForm">
                             <div className="[ form-group ]">
-                                <label>Username:</label>
+                                <label><i class="fas fa-user"></i> Username:</label>
                                 <input type="text" className="[ form-control ]" id="username" ref="username" placeholder="Enter Username"></input>
-                                <span className="[ login__error ]">{this.props.usernameError}</span>
+                                <span className="[ login__error ]"><i>{this.props.usernameError}</i></span>
                             </div>
                             <div className="[ form-group ]">
-                                <label>Password:</label>
+                                <label><i class="fas fa-unlock-alt"></i> Password:</label>
                                 <input type="password" className="[ form-control ]" id="password" ref="password" placeholder="Enter Password"></input>
-                                <span className="[ login__error ]">{this.props.passwordError}</span>
+                                <span className="[ login__error ]"><i>{this.props.passwordError}</i></span>
                             </div>
-                            <button type="submit" class="[ btn btn-primary ]" onClick={app.handleLogin}>Submit <i class="far fa-paper-plane"></i></button>
+                            <div className="[ text-center ]">
+                                <button type="submit" class="[ btn ] [ login__button ]" onClick={app.handleLogin}>Submit <i class="far fa-paper-plane"></i></button>
+                            </div>
                         </form>
                     </div>
                 </div>

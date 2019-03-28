@@ -1,12 +1,27 @@
 .navbar {
+    background-color: $black !important;
+    border-bottom: 1px solid $orange;
+    font-family: $heading-font;
+    font-size: 20px;
+
     &__links {
-        margin-right: 10px;
+        margin-right: 30px;
     }
     &__links--color a {
-        color: lightgreen !important;
+        color: $orange !important;
     }
 
     &__links--color a:hover {
-        color: lightblue !important;
+        color: $yellow !important;
+        text-decoration: none;
+    }
+
+    .navbar-brand {
+        color: $orange;
+        font-size: 30px;
+
+        &:hover {
+            color: $yellow;
+        }
     }
 }
