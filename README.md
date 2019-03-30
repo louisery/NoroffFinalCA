@@ -6,3 +6,4 @@ This is a React App, displaying characters from "Magic Card Game".
 - `cd` into the repo with your terminal
 - Run `npm install`
 - Run `npm start`
+- Open your browser and go to `localhost:8080/`
