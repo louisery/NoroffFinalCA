@@ -126,7 +126,7 @@ export default class ContactComponent extends React.Component {
                         <div className="[ form-group ]">
                             <label htmlFor="inputPhone">Phone:</label>
                             <input
-                                type="phone"
+                                type="text"
                                 name="inputPhone"
                                 placeholder="Enter Phone Number"
                                 className={`[ form-control ] [ ${formErrors.inputPhone.length > 0 ? 'form-invalid' : ''} ]`}

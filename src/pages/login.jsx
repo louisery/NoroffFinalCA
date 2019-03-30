@@ -12,6 +12,11 @@ export default class LoginPage extends React.Component {
 
 	}
 
+	loginDetails() {
+		localStorage.setItem('username', 'User');
+		localStorage.setItem('password', '@User123');
+	}
+
 	testUserDetails(username, password) {
 		let app = this;
 
@@ -24,17 +29,7 @@ export default class LoginPage extends React.Component {
 		}
 		if (localStorage.getItem('password') !== password) {
 			app.setState({ isPassword: 'Please enter a valid password' });
-		} else {
-			sessionStorage.setItem('AuthToken', 'sa6d456sd4a4ad6s');
-			this.router.navigate(['/home']);
-			this.isPassword = false;
-			this.isUsername = false;
 		}
-	}
-
-	loginDetails() {
-		localStorage.setItem('username', 'User');
-		localStorage.setItem('password', '@User123');
 	}
 
 	render() {

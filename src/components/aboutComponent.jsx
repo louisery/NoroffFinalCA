@@ -34,7 +34,7 @@ export default class AboutComponent extends React.Component {
                             <h2>Defeat Your Opponent<i className="[ fas fa-chevron-down ] [ float-right ]"></i></h2>
                         </div>
                         <div className="[ box__dropdown ]">
-                        {this.state.show && <Box />}
+                            {this.state.show && <Box />}
                         </div>
                     </div>
                 </div>
