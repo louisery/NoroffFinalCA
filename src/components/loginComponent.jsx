@@ -1,6 +1,6 @@
 import React from 'react';
-export default class LoginComponent extends React.Component {
 
+export default class LoginComponent extends React.Component {
     constructor(props) {
         super(props);
         this.handleLogin = this.handleLogin.bind(this);

@@ -73,7 +73,7 @@ export default class ContactComponent extends React.Component {
             case 'inputPhone':
                 formErrors.inputPhone = phoneRegex.test(value)
                     ? ''
-                    : 'The number format should be: xxx xxx xxxx, xxx-xxx-xxxx or xxx.xxx.xxxx'
+                    : 'Number format: xxx xxx xxxx, xxx-xxx-xxxx or xxx.xxx.xxxx'
                 break;
             default:
                 break;

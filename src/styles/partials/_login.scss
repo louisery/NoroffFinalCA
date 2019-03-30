@@ -6,6 +6,10 @@
     color: white;
     margin-bottom: 500px;
 
+    &__error {
+        color: $black;
+    }
+
     &__button {
         background-color: $orange;
         border-color: $orange;
