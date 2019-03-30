@@ -1,3 +1,13 @@
 .search {
     margin-top: 30px !important;
+    margin-bottom: 40px !important;
+
+    input {
+        border-color: $turquoise;
+        border-width: 2px;
+
+        &:focus {
+            border-color: $orange;
+        }
+    }
 }

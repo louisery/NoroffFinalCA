@@ -10,8 +10,10 @@
 
 .box {
     background: $gradient;
-    margin-bottom: 300px;
+    margin-bottom: 500px;
     border-radius: 5px;
+    cursor: pointer;
+    color: white;
 
     &__heading {
         margin-top: 30px;

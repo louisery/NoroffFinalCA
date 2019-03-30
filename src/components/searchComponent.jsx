@@ -22,11 +22,12 @@ export default class Search extends React.Component {
                     placeholder="Search for a Character"
                     aria-label="Search"
                     ref="searchTerm"
-                    onChange={app.handleCharacterSearchTerm} />
-</div>
-                );
-            }
-        }
-        
-        
-        
+                    onChange={app.handleCharacterSearchTerm}
+                />
+            </div>
+        );
+    }
+}
+
+
+

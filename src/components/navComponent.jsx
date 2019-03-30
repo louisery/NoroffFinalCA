@@ -6,7 +6,7 @@ export default class NavbarComponent extends React.Component {
         return (
 
             <nav className="[ navbar navbar-expand-lg navbar-dark bg-dark ]" role="navigation">
-                <a className="[ navbar-brand ] [ mr-3 ]" href="#">Card Game</a>
+                <a className="[ navbar-brand ] [ mr-3 ]" href="#"><i class="fas fa-magic"></i> Magic Card Game</a>
                 <button className="[ navbar-toggler ]" type="button" data-toggle="collapse" data-target="#navbar-content" aria-controls="navbar-content"
                     aria-expanded="false" aria-label="toggle navigation">
                     <span className="[ navbar-toggler-icon ]"></span>

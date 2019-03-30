@@ -4,7 +4,7 @@ export default class AboutComponent extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            show: true
+            show: false
         };
 
         this.toggleElement = this.toggleElement.bind(this)
